@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="universidadApp" ng-controller="mainCtrl as mc">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Universidad</title>
+
+
+        <!-- Incluir Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Estilo personalizado -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Incluir AngularJS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js.map"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js" integrity="sha512-5zOAub3cIpqklnKmM05spv4xttemFDlbBrmRexWiP0aWV8dlayEGciapAjBQWA7lgQsxPY6ay0oIUVtY/pivXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    </head>
+    <body  >
+
+      
+
+      <div ng-include="menuSuperiror"></div>
+  
+
+      <div class="container">
+
+        <div ng-view ></div>
+
+      </div>
+
+
+
+      <script src="/js/app.js"></script>
+      <script src="/js/profesoresCtrl.js"></script>
+      <script src="/js/inicioCtrl.js"></script>
+      <script src="js/alumnosCtrl.js"></script>
+      <script src="js/config.js"></script>
+    </body>
+</html>
